@@ -17,7 +17,9 @@
                 <ul class="flex items-center gap-6 text-sm font-medium text-slate-300 lg:gap-10 lg:text-base">
                     <li><a href="#" class="transition hover:text-fuchsia-300">Accueil</a></li>
                     <li><a href="#about" class="transition hover:text-fuchsia-300">À propos</a></li>
+                    <li><a href="#services" class="transition hover:text-fuchsia-300">Expertise</a></li>
                     <li><a href="#projects" class="transition hover:text-fuchsia-300">Projets</a></li>
+                    <li><a href="#formation" class="transition hover:text-fuchsia-300">Formation</a></li>
                     <li><a href="#skills" class="transition hover:text-fuchsia-300">Compétences</a></li>
                 </ul>
             </nav>
@@ -41,7 +43,9 @@
             <ul class="flex flex-wrap items-center justify-center gap-3 px-4 py-3 text-sm text-slate-300">
                 <li><a href="#" class="px-2 py-1 hover:text-fuchsia-300">Accueil</a></li>
                 <li><a href="#about" class="px-2 py-1 hover:text-fuchsia-300">À propos</a></li>
+                <li><a href="#services" class="px-2 py-1 hover:text-fuchsia-300">Expertise</a></li>
                 <li><a href="#projects" class="px-2 py-1 hover:text-fuchsia-300">Projets</a></li>
+                <li><a href="#formation" class="px-2 py-1 hover:text-fuchsia-300">Formation</a></li>
                 <li><a href="#skills" class="px-2 py-1 hover:text-fuchsia-300">Compétences</a></li>
                 <li><a href="#contact" class="px-2 py-1 hover:text-fuchsia-300">Contact</a></li>
             </ul>
@@ -60,6 +64,15 @@
                 <p class="mt-5 max-w-xl text-base text-slate-300 sm:text-lg">
                     Je conçois des expériences web élégantes, rapides et accessibles pour aider les marques à se distinguer.
                 </p>
+
+                <div class="mt-7 flex flex-wrap gap-4">
+                    <a href="./CV Rokhaya .pdf.pdf" download class="inline-flex items-center rounded-full bg-gradient-to-r from-fuchsia-500 to-violet-500 px-5 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-white shadow-lg shadow-fuchsia-500/30 transition hover:scale-[1.02]">
+                        Télécharger mon CV
+                    </a>
+                    <a href="#projects" class="inline-flex items-center rounded-full border border-fuchsia-400/30 bg-fuchsia-400/5 px-5 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-white transition hover:bg-fuchsia-400/10">
+                        Voir mes projets
+                    </a>
+                </div>
             </div>
 
             <div class="w-full max-w-md photo-entrance" data-delay="0.25">
@@ -110,91 +123,47 @@
         </section>
 
         <section id="projects" class="mt-28 scroll-mt-24">
-            <div class="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-                <div class="reveal" data-delay="0.1">
-                    <p class="mb-2 text-sm uppercase tracking-[0.3em] text-fuchsia-300">Sélection</p>
-                    <h2 class="text-3xl font-bold text-white sm:text-4xl">Mes projets</h2>
-                </div>
-                <p class="max-w-md text-sm leading-6 text-slate-300 reveal" data-delay="0.2">
-                    Des interfaces pensées pour être belles, utiles et mémorables.
-                </p>
+            <div class="mb-8 text-center reveal" data-delay="0.1">
+                <p class="mb-2 text-sm uppercase tracking-[0.35em] text-fuchsia-300">Portfolio</p>
+                <h2 class="text-4xl font-black tracking-[-0.04em] text-white sm:text-5xl">Mes <span class="text-fuchsia-300">projets</span></h2>
             </div>
 
-            <div class="project-track" aria-label="Liste des projets">
-                <article class="project-card reveal" data-delay="0.25">
-                    <div class="project-visual project-visual-mint">
-                        <div class="project-window">
-                            <span></span><span></span><span></span>
-                        </div>
-                        <div class="project-layout-lines"><i></i><i></i><i></i></div>
-                    </div>
-                    <div class="p-6">
-                        <p class="project-number">01</p>
-                        <h3 class="mt-2 text-xl font-semibold text-white">Dashboard Agence de Voyage</h3>
-                        <p class="mt-3 text-sm leading-6 text-slate-300">Interface interne pour secrétaires et administrateurs : suivi des prospects, réservations et paiements, du premier contact jusqu'au client fidèle.</p>
-                        <p class="project-tags">React · Node.js · Express.js · PostgreSQL</p>
-                        <a href="#" class="project-link">En cours <span aria-hidden="true">↗</span></a>
-                    </div>
+            <div class="grid gap-6 md:grid-cols-2" aria-label="Liste des projets">
+                <article class="overflow-hidden rounded-[1.5rem] border border-fuchsia-400/20 bg-white/5 shadow-lg shadow-fuchsia-900/10 reveal" data-delay="0.2">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80" alt="Dashboard Agence de Voyage" class="h-56 w-full object-cover grayscale-[15%]">
+                    <div class="p-5"><div class="flex items-center justify-between"><p class="text-4xl font-black text-fuchsia-300">01</p><span class="rounded-full border border-fuchsia-300/20 bg-fuchsia-400/10 px-2.5 py-1 text-[10px] uppercase tracking-[0.2em] text-fuchsia-200">Web App</span></div><h3 class="mt-4 text-xl font-semibold text-white">Dashboard Agence de Voyage</h3><p class="mt-3 text-sm leading-6 text-slate-300">Interface interne pour secrétaires et administrateurs : suivi des prospects, réservations et paiements.</p><p class="mt-4 text-[10px] uppercase tracking-[0.2em] text-slate-400">React · Node.js · Express.js · PostgreSQL</p><a href="#" class="mt-5 inline-flex text-sm font-semibold text-fuchsia-300">Voir le projet ↗</a></div>
                 </article>
-
-                <article class="project-card reveal" data-delay="0.4">
-                    <div class="project-visual project-visual-lilac">
-                        <div class="project-dashboard"><div></div><div></div><div></div><div></div></div>
-                    </div>
-                    <div class="p-6">
-                        <p class="project-number">02</p>
-                        <h3 class="mt-2 text-xl font-semibold text-white">YoonLink</h3>
-                        <p class="mt-3 text-sm leading-6 text-slate-300">Plateforme mettant en relation particuliers et professionnels du droit dans le contexte sénégalais et OHADA, avec espace de connexion et d'inscription.</p>
-                        <p class="project-tags">HTML · Tailwind CSS · JavaScript · EXPRESS · POSTGRESQL</p>
-                        <a href="https://yoonlink.vercel.app/" class="project-link">Voir le projet <span aria-hidden="true">↗</span></a>
-                    </div>
+                <article class="overflow-hidden rounded-[1.5rem] border border-fuchsia-400/20 bg-white/5 shadow-lg shadow-fuchsia-900/10 reveal" data-delay="0.35">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="YoonLink" class="h-56 w-full object-cover grayscale-[15%]"><div class="p-5"><div class="flex items-center justify-between"><p class="text-4xl font-black text-fuchsia-300">02</p><span class="rounded-full border border-fuchsia-300/20 bg-fuchsia-400/10 px-2.5 py-1 text-[10px] uppercase tracking-[0.2em] text-fuchsia-200">Plateforme</span></div><h3 class="mt-4 text-xl font-semibold text-white">YoonLink</h3><p class="mt-3 text-sm leading-6 text-slate-300">Plateforme mettant en relation particuliers et professionnels du droit dans le contexte sénégalais et OHADA.</p><p class="mt-4 text-[10px] uppercase tracking-[0.2em] text-slate-400">HTML · Tailwind CSS · JavaScript · Express · PostgreSQL</p><a href="https://yoonlink.vercel.app/" class="mt-5 inline-flex text-sm font-semibold text-fuchsia-300">Voir le projet ↗</a></div>
                 </article>
-
-                <article class="project-card reveal" data-delay="0.55">
-                    <div class="project-visual project-visual-pink">
-                        <div class="project-phone"><div></div><div></div><div></div></div>
-                    </div>
-                    <div class="p-6">
-                        <p class="project-number">03</p>
-                        <h3 class="mt-2 text-xl font-semibold text-white">App de Conjugaison</h3>
-                        <p class="mt-3 text-sm leading-6 text-slate-300">DApplication d'apprentissage de la conjugaison française, déployée sur Render, avec génération d'exercices et export PDF.</p>
-                        <p class="project-tags">Python · Flask · MySQL · HTML · CSS · JavaScript</p>
-                        <a href="https://app-apprentisage-de-la-conugaison.onrender.com/" class="project-link">Voir le projet <span aria-hidden="true">↗</span></a>
-                    </div>
+                <article class="overflow-hidden rounded-[1.5rem] border border-fuchsia-400/20 bg-white/5 shadow-lg shadow-fuchsia-900/10 reveal" data-delay="0.45">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="App de Conjugaison" class="h-56 w-full object-cover grayscale-[15%]"><div class="p-5"><div class="flex items-center justify-between"><p class="text-4xl font-black text-fuchsia-300">03</p><span class="rounded-full border border-fuchsia-300/20 bg-fuchsia-400/10 px-2.5 py-1 text-[10px] uppercase tracking-[0.2em] text-fuchsia-200">E-learning</span></div><h3 class="mt-4 text-xl font-semibold text-white">App de Conjugaison</h3><p class="mt-3 text-sm leading-6 text-slate-300">Application d'apprentissage de la conjugaison française avec génération d'exercices et export PDF.</p><p class="mt-4 text-[10px] uppercase tracking-[0.2em] text-slate-400">Python · Flask · MySQL · HTML · CSS · JavaScript</p><a href="https://app-apprentisage-de-la-conugaison.onrender.com/" class="mt-5 inline-flex text-sm font-semibold text-fuchsia-300">Voir le projet ↗</a></div>
                 </article>
-
-                <article class="project-card reveal" data-delay="0.7">
-                    <div class="project-visual project-visual-mint">
-                        <div class="project-window">
-                            <span></span><span></span><span></span>
-                        </div>
-                        <div class="project-layout-lines"><i></i><i></i><i></i></div>
-                    </div>
-                    <div class="p-6">
-                        <p class="project-number">04</p>
-                        <h3 class="mt-2 text-xl font-semibold text-white">Application de gestion de tontine</h3>
-                        <p class="mt-3 text-sm leading-6 text-slate-300">Application web permettant de gérer les membres, cotisations et opérations d'une tontine de manière simple et organisée.</p>
-                        <p class="project-tags">HTML · CSS · JavaScript · Laravel · MySQL </p>
-                        <a href="#" class="project-link">Voir le projet <span aria-hidden="true">↗</span></a>
-                    </div>
+                <article class="overflow-hidden rounded-[1.5rem] border border-fuchsia-400/20 bg-white/5 shadow-lg shadow-fuchsia-900/10 reveal" data-delay="0.55">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="Application de gestion de tontine" class="h-56 w-full object-cover grayscale-[15%]"><div class="p-5"><div class="flex items-center justify-between"><p class="text-4xl font-black text-fuchsia-300">04</p><span class="rounded-full border border-fuchsia-300/20 bg-fuchsia-400/10 px-2.5 py-1 text-[10px] uppercase tracking-[0.2em] text-fuchsia-200">Gestion</span></div><h3 class="mt-4 text-xl font-semibold text-white">Application de gestion de tontine</h3><p class="mt-3 text-sm leading-6 text-slate-300">Application web permettant de gérer les membres, cotisations et opérations d'une tontine.</p><p class="mt-4 text-[10px] uppercase tracking-[0.2em] text-slate-400">HTML · CSS · JavaScript · Laravel · MySQL</p><a href="#" class="mt-5 inline-flex text-sm font-semibold text-fuchsia-300">Voir le projet ↗</a></div>
                 </article>
-
-
-                <article class="project-card reveal" data-delay="0.7">
-                    <div class="project-visual project-visual-mint">
-                        <div class="project-window">
-                            <span></span><span></span><span></span>
-                        </div>
-                        <div class="project-layout-lines"><i></i><i></i><i></i></div>
-                    </div>
-                    <div class="p-6">
-                        <p class="project-number">04</p>
-                        <h3 class="mt-2 text-xl font-semibold text-white">Application de mariage</h3>
-                        <p class="mt-3 text-sm leading-6 text-slate-300">Création d’une application web de mariage élégante et interactive permettant aux invités de découvrir les informations essentielles de l’événement à travers une expérience digitale moderne et personnalisée.</p>
-                        <p class="project-tags">HTML · CSS · JavaScript  </p>
-                        <a href="https://mansourarame.vercel.app/" class="project-link">Voir le projet <span aria-hidden="true">↗</span></a>
-                    </div>
+                <article class="overflow-hidden rounded-[1.5rem] border border-fuchsia-400/20 bg-white/5 shadow-lg shadow-fuchsia-900/10 reveal" data-delay="0.65">
+                    <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=80" alt="Application de mariage" class="h-56 w-full object-cover grayscale-[15%]"><div class="p-5"><div class="flex items-center justify-between"><p class="text-4xl font-black text-fuchsia-300">05</p><span class="rounded-full border border-fuchsia-300/20 bg-fuchsia-400/10 px-2.5 py-1 text-[10px] uppercase tracking-[0.2em] text-fuchsia-200">Event</span></div><h3 class="mt-4 text-xl font-semibold text-white">Application de mariage</h3><p class="mt-3 text-sm leading-6 text-slate-300">Application web élégante et interactive pour présenter les informations essentielles d'un mariage.</p><p class="mt-4 text-[10px] uppercase tracking-[0.2em] text-slate-400">HTML · CSS · JavaScript</p><a href="https://mansourarame.vercel.app/" class="mt-5 inline-flex text-sm font-semibold text-fuchsia-300">Voir le projet ↗</a></div>
                 </article>
+            </div>
+        </section>
+
+        <section id="services" class="mt-28 scroll-mt-24">
+            <div class="mb-8 reveal" data-delay="0.1"><p class="mb-2 text-sm uppercase tracking-[0.3em] text-fuchsia-300">Ce que je fais</p><h2 class="text-3xl font-bold uppercase tracking-[0.08em] text-white sm:text-4xl">EXPERTISE</h2></div>
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                <article class="rounded-[1.75rem] border border-fuchsia-400/20 bg-white/5 p-6 shadow-lg shadow-fuchsia-900/10 reveal" data-delay="0.15"><div class="mb-4 text-xl text-fuchsia-300">UI</div><h3 class="text-xl font-semibold text-white">Design & UX</h3><p class="mt-3 text-sm leading-7 text-slate-300">Création d’interfaces modernes, claires et engageantes.</p></article>
+                <article class="rounded-[1.75rem] border border-fuchsia-400/20 bg-white/5 p-6 shadow-lg shadow-fuchsia-900/10 reveal" data-delay="0.25"><div class="mb-4 text-xl text-violet-300">&lt;/&gt;</div><h3 class="text-xl font-semibold text-white">Frontend</h3><p class="mt-3 text-sm leading-7 text-slate-300">Interfaces élégantes, réactives et centrées sur l’utilisateur.</p></article>
+                <article class="rounded-[1.75rem] border border-fuchsia-400/20 bg-white/5 p-6 shadow-lg shadow-fuchsia-900/10 reveal" data-delay="0.35"><div class="mb-4 text-xl text-pink-300">⚙️</div><h3 class="text-xl font-semibold text-white">Backend</h3><p class="mt-3 text-sm leading-7 text-slate-300">API, logique serveur, données et sécurisation des applications.</p></article>
+                <article class="rounded-[1.75rem] border border-fuchsia-400/20 bg-white/5 p-6 shadow-lg shadow-fuchsia-900/10 reveal" data-delay="0.45"><div class="mb-4 text-xl text-pink-300">⚡</div><h3 class="text-xl font-semibold text-white">Optimisation</h3><p class="mt-3 text-sm leading-7 text-slate-300">Amélioration de la vitesse, de l’accessibilité et de l’efficacité.</p></article>
+            </div>
+        </section>
+
+        <section id="formation" class="mt-28 scroll-mt-24 reveal" data-delay="0.2">
+            <div class="mb-8"><p class="mb-2 text-sm uppercase tracking-[0.3em] text-fuchsia-300">Formation</p><h2 class="text-3xl font-bold text-white sm:text-4xl">🎓 Formation</h2></div>
+            <div class="grid gap-6 lg:grid-cols-3">
+                <div class="rounded-[2rem] border border-fuchsia-400/20 bg-white/5 p-6 shadow-lg shadow-fuchsia-900/10 sm:p-8"><h3 class="text-xl font-semibold text-fuchsia-300">Licence en Développement et Administration d’Applications</h3><p class="mt-3 text-base text-slate-200">Université Alioune Diop de Bambey (UADB) — UFR SATIC</p><p class="mt-2 text-sm uppercase tracking-[0.2em] text-slate-400">2022 – 2025</p></div>
+                <div class="rounded-[2rem] border border-fuchsia-400/20 bg-white/5 p-6 shadow-lg shadow-fuchsia-900/10 sm:p-8"><h3 class="text-xl font-semibold text-fuchsia-300">Baccalauréat</h3><p class="mt-3 text-base text-slate-200">S2 Lycée Valdiodio Ndiaye</p><p class="mt-2 text-sm uppercase tracking-[0.2em] text-slate-400">2021</p></div>
+                <div class="rounded-[2rem] border border-fuchsia-400/20 bg-white/5 p-6 shadow-lg shadow-fuchsia-900/10 sm:p-8"><h3 class="text-xl font-semibold text-fuchsia-300">📜 Certifications & formations complémentaires</h3><p class="mt-4 text-base text-slate-200">Gomycode — Développement frontend · 2024</p><p class="mt-2 text-base text-slate-200">Xarala — Développement fullstack · 2026</p></div>
             </div>
         </section>
 
