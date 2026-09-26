@@ -49,6 +49,14 @@ body.light-mode .text-slate-300 {
   color: #475569 !important;
 }
 
+body.light-mode #formation .text-slate-200 {
+  color: #334155 !important;
+}
+
+body.light-mode #formation .text-slate-400 {
+  color: #64748b !important;
+}
+
 body.light-mode .text-fuchsia-300 {
   color: #be185d !important;
 }
@@ -632,6 +640,15 @@ body.light-mode .contact-detail small { color: #475569; }
 body.light-mode .site-footer {
   background: rgba(255, 255, 255, 0.65);
   border-color: rgba(168, 85, 247, 0.2);
+}
+
+body.light-mode .footer-brand {
+  color: #86198f;
+}
+
+body.light-mode .site-footer .text-slate-400,
+body.light-mode .site-footer .text-slate-500 {
+  color: #475569 !important;
 }
 
 body.light-mode .social-links a {
